@@ -1,0 +1,96 @@
+.left-panel-section {
+  height: 50%;
+  text-align: center;
+}
+
+img.logo {
+ width:100%;
+ height:auto;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  padding-bottom: 3%;
+  text-transform: uppercase;
+}
+
+.section-text {
+    color: white;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+}
+
+.section-text h1{
+  font-family: din;
+  font-size: 30px;
+}
+
+.section-text p{
+  font-family: din;
+  font-size: 15px;
+}
+
+.right-panel-section {
+  height: 33%;
+  text-align: center;
+}
+
+.right-panel-section .section-text{
+  padding-top: 12%;
+}
+
+.spec {
+  background-image:url('https://s3.amazonaws.com/newvertilux.com/img/vertilux_spec.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(36,37,38, 0.7);
+}
+
+.home {
+  background-image:url('https://s3.amazonaws.com/newvertilux.com/img/vertilux_home.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(36,37,38, 0.7);
+}
+
+.big-image {
+  background-image: url('https://s3.amazonaws.com/newvertilux.com/img/big_image_landing.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.boton {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: white;
+  color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.social{
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
