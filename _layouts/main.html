@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" >
-    <head>
-        {% include header.html %}
-    </head>
+  <head>
+    {% include header.html %}
+  </head>
 
-    <body>
-        {% include main.html %}
-    </body>
+  <body>
+    {% include main.html %}
+  </body>
+
+  <!-- Set localStorage for auto redirection -->
+  <script type="text/javascript">
+    function homeURL() {
+        localStorage.setItem("homeURL", '{{site.home.url}}');
+    }
+    function partnerURL() {
+        localStorage.setItem("partnerURL", '{{site.partner.url}}');
+    }
+    function specURL() {
+        localStorage.setItem("specURL", '{{site.spec.url}}');
+    }
+
+    if("homeURL" in localStorage){
+        window.location.replace("{{site.home.url}}");
+    } else if("partnerURL" in localStorage) {
+        window.location.replace("{{site.partner.url}}");
+    } else if("specURL" in localStorage) {
+        window.location.replace("{{site.spec.url}}");
+    }
+  </script>
 </html>
